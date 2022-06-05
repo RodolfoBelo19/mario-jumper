@@ -37,6 +37,25 @@
   animation: clouds 20s linear infinite;
 }
 
+.score-home {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.score {
+  text-align: center;
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url('../assets/golden.jpeg');
+  background-size: cover;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: rgb(55, 55, 55);
+  animation: fade 2s;
+}
+
 @keyframes pipe-animation {
   from {
     right: -80px;
@@ -76,5 +95,15 @@
 
   to {
     right: 100%;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

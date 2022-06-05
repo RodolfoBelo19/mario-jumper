@@ -1,0 +1,47 @@
+.game-over {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  padding: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgba(14, 15, 15, 0.2)
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container button {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  background: linear-gradient(#fff, rgb(192, 192, 192));
+  box-shadow: 0 1px 4px rgba(0, 0, 0);
+  color: rgb(44, 43, 43);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  animation: fade 2s;
+  cursor: pointer;
+}
+
+.container img {
+  animation: fade 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
